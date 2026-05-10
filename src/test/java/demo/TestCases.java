@@ -40,22 +40,24 @@ public void testCase01() {
                     By.xpath("(//input[@type='text'])[1]")));
 
     Wrappers.enterText(nameInputBox, "Crio Learner");
-
+                System.out.println("Your name has been entered successfully!");
     WebElement practicingAutomationTextArea = wait.until(
             ExpectedConditions.visibilityOfElementLocated(
                     By.xpath("//span[contains(text(),'Why are you practicing Automation')]/ancestor::div[@role='listitem']//textarea")));
 
     String practicingAutomationText = "I want to be the best QA Engineer!";
+    System.out.println("The reason for practicing automation has been defined successfully!");
     String epochTimeString = Wrappers.getEpochTimeString();
 
     Wrappers.enterText(practicingAutomationTextArea,
             practicingAutomationText + " " + epochTimeString);
 
     Wrappers.radioButton(driver, "3 - 5");
-
+    System.out.println("The experience level has been selected successfully!");
     Wrappers.checkBox(driver, "Java");
     Wrappers.checkBox(driver, "Selenium");
     Wrappers.checkBox(driver, "TestNG");
+    System.out.println("The skills have been selected successfully!");
 
     WebElement dropDoWebElement = wait.until(
             ExpectedConditions.elementToBeClickable(
@@ -70,6 +72,7 @@ public void testCase01() {
             By.xpath("//div[@role='option']//span[text()='Mr' or text()='Ms' or text()='Mrs' or text()='Dr' or text()='Rather not say']"));
 
     Wrappers.dropDownClickByLoop(dropDownList, "Mrs");
+    System.out.println("The dropdown option has been selected successfully!");
 
     WebElement dateInputBox = wait.until(
             ExpectedConditions.visibilityOfElementLocated(
@@ -78,6 +81,7 @@ public void testCase01() {
     String sevenDaysAgoDate = Wrappers.getdateSevenDaysAgo(7);
 
     Wrappers.enterText(dateInputBox, sevenDaysAgoDate);
+        System.out.println("The date has been entered successfully!");
 
     WebElement hourElement = wait.until(
             ExpectedConditions.visibilityOfElementLocated(
@@ -86,6 +90,7 @@ public void testCase01() {
     WebElement minElement = wait.until(
             ExpectedConditions.visibilityOfElementLocated(
                     By.xpath("//input[@aria-label='Minute']")));
+                    System.out.println("The hour and minute input boxes have been located successfully!");
 
     WebElement submitBtn = wait.until(
             ExpectedConditions.elementToBeClickable(

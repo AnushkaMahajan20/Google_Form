@@ -22,12 +22,12 @@
       "indicator": "USED_THREAD_SLEEP"
     },
     {
-      "is_enabled": true,
-      "min_limit": 3,
-      "max_limit": null,
-      "out": "System Out Printline or Logging Check.You used {} System out Printline statements, should be between {} < {}",
-      "indicator": "USED_SOPL"
-    }
+"is_enabled": false,
+"min_limit": 3,
+"max_limit": null,
+"out": "System Out Printline or Logging Check.You used {} System out Printline statements, should be between {} < {}",
+"indicator": "USED_SOPL"
+}
   ],
   "instruction_set": [
     {
