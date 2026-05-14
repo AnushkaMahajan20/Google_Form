@@ -115,6 +115,7 @@ public void testCase01() {
     @BeforeTest
     public void startBrowser()
     {
+        //happy coding
         System.setProperty("java.util.logging.config.file", "logging.properties");
 
         // NOT NEEDED FOR SELENIUM MANAGER
